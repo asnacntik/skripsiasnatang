@@ -1,0 +1,7 @@
+transformers
+torch
+scikit-learn
+pandas
+flask
+datasets
+gunicorn

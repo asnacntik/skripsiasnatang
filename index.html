@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deteksi Tautan Berbahaya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-xl text-center">
+    <h1 class="text-2xl font-bold text-blue-800 mb-4">🔍 Sistem Deteksi Tautan Berbahaya</h1>
+    <p class="text-sm text-gray-500 mb-6">Masukkan URL di bawah ini untuk memeriksa apakah tautan berbahaya atau aman.</p>
+
+    <input id="urlInput" type="text" placeholder="https://contoh.com" 
+           class="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 mb-4"/>
+
+    <button onclick="checkURL()" 
+            class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition-all duration-200">
+      Periksa URL
+    </button>
+
+    <div id="result" class="mt-6 text-lg font-medium"></div>
+  </div>
+
+  <!-- ✅ Path ini diasumsikan file index.html dan script.js berada di folder yang sama -->
+  <script src="./script.js"></script>
+</body>
+</html>
